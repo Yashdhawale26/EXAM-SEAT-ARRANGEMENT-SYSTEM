@@ -146,7 +146,7 @@ export default function SeatAllocation() {
       } catch (error) {
         console.log(error);
       }
-    }
+    },[axiosPrivate]);
 
     getRooms();
 
