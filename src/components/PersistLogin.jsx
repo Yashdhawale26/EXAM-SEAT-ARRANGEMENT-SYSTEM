@@ -22,7 +22,7 @@ const PersistLogin = () => {
             }
         }
 
-        !auth?.accessToken ? verifyRefreshToken() : setIsLoading(false);
+        // !auth?.accessToken ? verifyRefreshToken() : setIsLoading(false);
     }, [auth?.accessToken, refresh]);
 
     useEffect(() => {
