@@ -146,7 +146,7 @@ export default function SeatAllocation() {
       } catch (error) {
         console.log(error);
       }
-    },[axiosPrivate]);
+    }
 
     getRooms();
 
@@ -191,7 +191,7 @@ export default function SeatAllocation() {
       isMounted = false;
       controller.abort();
     }
-  }, []);
+  },[axiosPrivate]);
 
   return (
     <div className="bg-background flex flex-col flex-grow md:w-5/6">
